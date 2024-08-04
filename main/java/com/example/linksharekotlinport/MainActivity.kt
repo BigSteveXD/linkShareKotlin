@@ -47,9 +47,6 @@ class MainActivity : ComponentActivity(){
                 }catch(e: Exception){
                     println(e)
                     //Log.d("connectButton", "failed")
-                }finally{
-                    peerWriter?.close()
-                    soc?.close()
                 }
             }.start()
         }
